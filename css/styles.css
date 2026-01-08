@@ -713,104 +713,85 @@ footer {
     }
 }
 
-/* --- WEEKLY MENU GLAMOUR STYLE --- */
+/* --- WEEKLY MENU LIST STYLE --- */
 
-.menu-page-container {
-    background-color: var(--glam-bg);
-    /* The yellow background */
-    min-height: 100vh;
-    padding: 60px 20px;
-    text-align: center;
-    color: #333;
-}
-
-.menu-header {
-    margin-bottom: 60px;
-}
-
-.menu-subtitle {
-    font-family: 'Georgia', serif;
-    font-size: 1.2rem;
-    font-style: italic;
-    color: var(--glam-pink);
-}
-
-/* How It Works Section */
-.how-it-works {
-    max-width: 900px;
-    margin: 0 auto 80px auto;
-    border-top: 2px solid var(--glam-pink);
-    border-bottom: 2px solid var(--glam-pink);
-    padding: 40px 0;
-}
-
-.how-it-works h2 {
-    font-family: 'Georgia', serif;
-    color: var(--glam-pink);
-    margin-bottom: 30px;
-}
-
-.rules-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    text-align: left;
-}
-
-.rule-card h3 {
-    font-family: 'Georgia', serif;
-    margin-bottom: 10px;
-    color: #000;
-}
-
-/* The Menu Items (Matches your screenshot) */
-.menu-list {
+.menu-grid {
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* Space between items */
 }
 
-.menu-item {
-    margin-bottom: 60px;
-    /* Space between dishes */
+.menu-item-card {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(179, 27, 93, 0.2);
+    /* Faint pink line */
 }
 
-.dish-name {
+.menu-item-card:last-child {
+    border-bottom: none;
+}
+
+.menu-item-card h3 {
     font-family: 'Georgia', serif;
     font-size: 2rem;
     text-transform: uppercase;
-    /* Makes it look like the screenshot */
-    margin-bottom: 10px;
     color: #111;
+    margin-bottom: 10px;
     font-weight: normal;
 }
 
-.dish-desc {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
+.menu-desc {
+    font-size: 1.2rem;
     font-style: italic;
+    color: #333;
+    margin-bottom: 8px;
 }
 
-.dish-sub {
-    font-size: 0.95rem;
+.menu-details {
+    font-size: 1rem;
     color: #555;
+    line-height: 1.5;
     max-width: 600px;
-    margin: 0 auto 15px auto;
+    margin: 0 auto;
 }
 
-.order-btn {
-    background-color: var(--glam-pink);
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 50px;
-    /* Pill shape */
-    transition: transform 0.2s;
+/* --- POTSDAM CO-OP SECTION --- */
+.coop-section {
+    margin-top: 80px;
+    padding-top: 50px;
+    border-top: 3px solid var(--glam-pink);
+    text-align: center;
 }
 
-.order-btn:hover {
+.coop-section h2 {
+    color: var(--glam-pink);
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.coop-logo {
+    max-width: 400px;
+    /* Adjust size of logo */
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.coop-link:hover .coop-logo {
     transform: scale(1.05);
-    background-color: #8a1547;
+    /* Slight zoom when hovering the logo */
+    cursor: pointer;
+}
+
+.coop-caption {
+    margin-top: 15px;
+    color: var(--glam-pink);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }

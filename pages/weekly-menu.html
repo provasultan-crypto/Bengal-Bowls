@@ -1,51 +1,41 @@
-<div id="content">
-    <div class="menu-page-container">
-        <div class="menu-header">
-            <h1 class="brand-title">Weekly Menu</h1>
-            <p class="menu-subtitle">Fresh, local, and ready to heat.</p>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="how-it-works">
-            <h2>How We Work</h2>
-            <div class="rules-grid">
-                <div class="rule-card">
-                    <h3>1. Order</h3>
-                    <p>Menu goes up Thursday. Order by <strong>Monday 11 AM</strong>.</p>
-                </div>
-                <div class="rule-card">
-                    <h3>2. Pickup</h3>
-                    <p><strong>Tuesday:</strong> 3pm-6pm at Bengal Bowls in Potsdam.</p>
-                </div>
-                <div class="rule-card">
-                    <h3>3. Delivery</h3>
-                    <p><strong>Wednesday:</strong> 12pm-5pm. Cooler bag required.</p>
-                </div>
-            </div>
-            <p class="freezer-note"><em>*Freezer inventory is always available!</em></p>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <div class="menu-list">
+<body>
 
-            <div class="menu-item">
-                <h2 class="dish-name">Daal Rice (Vegan)</h2>
-                <p class="dish-desc">Onion, sweet pepper, sauteed turmeric-lime rice.</p>
-                <p class="dish-sub">Chana daal with cauliflower and spinach with onion, ginger, and spice blends.</p>
-                <button class="order-btn">Add to Cart - $12</button>
+    <nav class="nav-container">
+    </nav>
+
+    <div id="content">
+        <div class="menu-page-container">
+
+            <div class="menu-header">
+                <h1 class="brand-title">Weekly Menu</h1>
+                <p class="menu-subtitle">Fresh, local, and available now.</p>
             </div>
 
-            <div class="menu-item">
-                <h2 class="dish-name">Peas Pulao</h2>
-                <p class="dish-desc">Rice with peas, spiced honey BBQ tofu.</p>
-                <p class="dish-sub">Chana Daal with cauliflower and spinach spice blends with pineapple chutney.</p>
-                <button class="order-btn">Add to Cart - $14</button>
+            <div id="weekly-menu-list" class="menu-grid">
             </div>
 
-            <div class="menu-item">
-                <h2 class="dish-name">Bengali Style Salmon Bhuna</h2>
-                <p class="dish-desc">Salmon cooked with onion, ginger, garlic, tomato, spices, and cilantro.</p>
-                <button class="order-btn">Add to Cart - $16</button>
+            <div class="coop-section">
+                <h2>Find Us At</h2>
+                <a href="https://www.potsdamcoop.com/" target="_blank" class="coop-link">
+                    <img src="images/coop-logo.jpg" alt="Potsdam Food Co-op" class="coop-logo">
+                </a>
+                <p class="coop-caption">Click to visit Potsdam Food Co-op Website</p>
             </div>
 
         </div>
     </div>
-</div>
+
+    <script src="weekly-data.js"></script>
+</body>
+
+</html>
