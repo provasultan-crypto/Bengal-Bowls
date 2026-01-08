@@ -712,3 +712,105 @@ footer {
         gap: 1rem;
     }
 }
+
+/* --- WEEKLY MENU GLAMOUR STYLE --- */
+
+.menu-page-container {
+    background-color: var(--glam-bg);
+    /* The yellow background */
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.menu-header {
+    margin-bottom: 60px;
+}
+
+.menu-subtitle {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--glam-pink);
+}
+
+/* How It Works Section */
+.how-it-works {
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    border-top: 2px solid var(--glam-pink);
+    border-bottom: 2px solid var(--glam-pink);
+    padding: 40px 0;
+}
+
+.how-it-works h2 {
+    font-family: 'Georgia', serif;
+    color: var(--glam-pink);
+    margin-bottom: 30px;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.rule-card h3 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* The Menu Items (Matches your screenshot) */
+.menu-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    margin-bottom: 60px;
+    /* Space between dishes */
+}
+
+.dish-name {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    /* Makes it look like the screenshot */
+    margin-bottom: 10px;
+    color: #111;
+    font-weight: normal;
+}
+
+.dish-desc {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.dish-sub {
+    font-size: 0.95rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 15px auto;
+}
+
+.order-btn {
+    background-color: var(--glam-pink);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    /* Pill shape */
+    transition: transform 0.2s;
+}
+
+.order-btn:hover {
+    transform: scale(1.05);
+    background-color: #8a1547;
+}
