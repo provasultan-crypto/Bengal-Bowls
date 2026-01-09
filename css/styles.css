@@ -713,8 +713,31 @@ footer {
     }
 }
 
-/* --- WEEKLY MENU LIST STYLE --- */
+/* =========================================
+   WEEKLY MENU PAGE (UPDATED)
+   ========================================= */
 
+.menu-page-container {
+    background-color: var(--glam-bg);
+    /* Yellow Background */
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.menu-header {
+    margin-bottom: 60px;
+}
+
+.menu-subtitle {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--glam-pink);
+}
+
+/* --- THE MENU LIST --- */
 .menu-grid {
     max-width: 800px;
     margin: 0 auto;
@@ -728,16 +751,20 @@ footer {
     text-align: center;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(179, 27, 93, 0.2);
-    /* Faint pink line */
+    /* Faint pink divider line */
 }
 
+/* Removes the line from the very last item */
 .menu-item-card:last-child {
     border-bottom: none;
 }
 
+/* --- FOOD TITLES --- */
 .menu-item-card h3 {
-    font-family: 'Georgia', serif;
+    /* [ADJUST SIZE HERE] */
     font-size: 2rem;
+
+    font-family: 'Georgia', serif;
     text-transform: uppercase;
     color: #111;
     margin-bottom: 10px;
@@ -759,39 +786,57 @@ footer {
     margin: 0 auto;
 }
 
+/* --- PRICE TEXT (Replaces Buttons) --- */
+.menu-price {
+    /* [ADJUST SIZE HERE] */
+    font-size: 1.5rem;
+
+    color: var(--glam-pink);
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: 'Georgia', serif;
+}
+
 /* --- POTSDAM CO-OP SECTION --- */
 .coop-section {
     margin-top: 80px;
     padding-top: 50px;
     border-top: 3px solid var(--glam-pink);
+    /* Thick pink line above logo */
     text-align: center;
 }
 
 .coop-section h2 {
+    /* [ADJUST SIZE HERE] */
+    font-size: 2.5rem;
+
     color: var(--glam-pink);
     font-family: 'Georgia', serif;
-    font-size: 2.5rem;
     margin-bottom: 30px;
 }
 
 .coop-logo {
     max-width: 400px;
-    /* Adjust size of logo */
+    /* Controls logo size */
     width: 100%;
     transition: transform 0.3s ease;
 }
 
 .coop-link:hover .coop-logo {
     transform: scale(1.05);
-    /* Slight zoom when hovering the logo */
+    /* Slight zoom on hover */
     cursor: pointer;
 }
 
 .coop-caption {
     margin-top: 15px;
-    color: var(--glam-pink);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 1px;
+}
+
+.coop-caption a {
+    color: var(--glam-pink);
+    text-decoration: none;
 }
